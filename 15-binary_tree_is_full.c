@@ -10,18 +10,14 @@ if (tree == NULL)
 {
 return (1);
 }
-    
 if ((tree->left) && (tree->right))
 {
-// Recurse into left and right subtrees
 return (binary_tree_is_full(tree->left) && binary_tree_is_full(tree->right));
 }
 else if ((tree->left == NULL) && (tree->right == NULL))
 {
-// Leaf node (no children) in a full binary tree
 return (1);
 }
-    
-return (0); // If only one child is present, it's not a full binary tree
+return (0);
 }
 
