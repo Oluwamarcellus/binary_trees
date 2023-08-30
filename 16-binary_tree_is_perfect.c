@@ -1,10 +1,6 @@
 #include "binary_trees.h"
 #include <stddef.h>
 
-int tree_height(const binary_tree_t *tree);
-size_t tree_size(const binary_tree_t *tree);
-size_t custom_pow(size_t base, size_t exponent);
-
 /**
  *binary_tree_is_perfect - checks if a binary tree is perfect
  *@tree: Pointer to the root node ofthe tree to check
@@ -81,11 +77,10 @@ size_t tree_size(const binary_tree_t *tree)
  */
 size_t custom_pow(size_t base, size_t exponent)
 {
+	size_t i, result = 1;
+
 	if (exponent == 0)
 		return (1);
-
-	size_t result = 1;
-	size_t i;
 
 	for (i = 0; i < exponent; i++)
 	{
