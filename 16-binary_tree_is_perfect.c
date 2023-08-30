@@ -1,5 +1,4 @@
 #include "binary_trees.h"
-#include <math.h>
 #include <stddef.h>
 
 int tree_height(const binary_tree_t *tree);
