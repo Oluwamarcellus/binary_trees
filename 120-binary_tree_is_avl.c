@@ -61,7 +61,8 @@ if (balancer > 1)
 {
 return (0);
 }
-return (bal_avl(tree->left, lower, tree->n -1) && bal_avl(tree->right, tree->n + 1, heigh));
+return (bal_avl(tree->left, lower, tree->n - 1) &&
+bal_avl(tree->right, tree->n + 1, heigh));
 }
 return (1);
 }
