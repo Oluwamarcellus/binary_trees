@@ -19,10 +19,10 @@
  */
 struct binary_tree_s
 {
-        int n;
-        struct binary_tree_s *parent;
-        struct binary_tree_s *left;
-        struct binary_tree_s *right;
+int n;
+struct binary_tree_s *parent;
+struct binary_tree_s *left;
+struct binary_tree_s *right;
 };
 typedef struct binary_tree_s binary_tree_t;
 typedef struct binary_tree_s heap_t;
@@ -58,13 +58,10 @@ int binary_tree_is_perfect(const binary_tree_t *tree);
 int tree_height(const binary_tree_t *tree);
 size_t tree_size(const binary_tree_t *tree);
 size_t custom_pow(size_t base, size_t exponent);
-
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
-
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
-                const binary_tree_t *second);
+const binary_tree_t *second);
 int depth(const binary_tree_t *tree);
-
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 void o_level(const binary_tree_t *tree, void (*func)(int), size_t step);
 size_t t_height(const binary_tree_t *tree);
@@ -73,7 +70,7 @@ binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
 int binary_tree_is_avl(const binary_tree_t *tree);
 int bal_avl(const binary_tree_t *tree, int lower, int high);
 size_t binary_tree_height(const binary_tree_t *tree);
-int bal_avl (const binary_tree_t *tree, int lower, int heigh);
+int bal_avl(const binary_tree_t *tree, int lower, int heigh);
 size_t binary_tree_height(const binary_tree_t *tree);
 int binary_tree_is_avl(const binary_tree_t *tree);
 avl_t *a_sort(avl_t *parent, int *array, int b, int l);
