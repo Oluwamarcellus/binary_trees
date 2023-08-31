@@ -25,6 +25,9 @@ struct binary_tree_s
         struct binary_tree_s *right;
 };
 typedef struct binary_tree_s binary_tree_t;
+typedef struct binary_tree_s heap_t;
+typedef struct binary_tree_s bst_t;
+typedef struct binary_tree_s avl_t;
 
 /** -------------------------------------------------------------- */
 
@@ -73,7 +76,7 @@ size_t binary_tree_height(const binary_tree_t *tree);
 int bal_avl (const binary_tree_t *tree, int lower, int heigh);
 size_t binary_tree_height(const binary_tree_t *tree);
 int binary_tree_is_avl(const binary_tree_t *tree);
-
-
+avl_t *r_insert_node(avl_t **tree, avl_t *parent, avl_t **new, int nval);
+avl_t *avl_insert(avl_t **tree, int value);
 
 #endif /* _BINARY_TREES_H_ */
