@@ -18,8 +18,6 @@ r_insert_node(tree, *tree, &new, value);
 return (new);
 }
 
-#include "binary_trees.h"
-
 /**
 * r_insert_node - insertions method
 * @tree: root.
