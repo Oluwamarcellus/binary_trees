@@ -78,5 +78,6 @@ size_t binary_tree_height(const binary_tree_t *tree);
 int binary_tree_is_avl(const binary_tree_t *tree);
 avl_t *r_insert_node(avl_t **tree, avl_t *parent, avl_t **new, int nval);
 avl_t *avl_insert(avl_t **tree, int value);
+avl_t *array_to_avl(int *array, size_t size);
 
 #endif /* _BINARY_TREES_H_ */
