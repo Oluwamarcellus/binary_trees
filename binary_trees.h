@@ -46,6 +46,7 @@ size_t binary_tree_size(const binary_tree_t *tree);
 size_t binary_tree_leaves(const binary_tree_t *tree);
 size_t binary_tree_nodes(const binary_tree_t *tree);
 int binary_tree_balance(const binary_tree_t *tree);
+int tree_h(binary_tree_t *tree);
 int binary_tree_is_full(const binary_tree_t *tree);
 int binary_tree_is_perfect(const binary_tree_t *tree);
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
@@ -84,7 +85,7 @@ int binary_tree_is_avl(const binary_tree_t *tree);
 avl_t *a_sort(avl_t *parent, int *array, int b, int l);
 avl_t *sorted_array_to_avl(int *array, size_t size);
 avl_t *array_to_avl(int *array, size_t size);
-avl_t *r_insert_node(avl_t **tree, avl_t *parent, avl_t **new_, int nval);
+avl_t *r_insert_node(avl_t **tree, avl_t *parent, avl_t **new_, int vl);
 avl_t *avl_insert(avl_t **tree, int value);
 avl_t *array_to_avl(int *array, size_t size);
 
